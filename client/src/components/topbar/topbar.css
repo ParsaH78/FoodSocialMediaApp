@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #ff6868;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 20px;
+  font-family: "DynaPuff", "Roboto";
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.topbarCenter {
+  flex: 5 1;
+  position: relative;
+}
+
+.resultBox {
+  display: none;
+}
+
+.showResult {
+  width: 58%;
+  max-height: 30vh;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #cdc6c6;
+  border-radius: 6px;
+  display: block;
+  overflow-y: scroll;
+  margin-right: 4px;
+}
+
+.resultTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #e76262;
+  gap: 10px;
+}
+
+.titleIcon {
+  margin-top: 10px;
+}
+
+.resultItem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.resultSeparator {
+  width: 60%;
+  border: 1px solid #cbc6c6;
+}
+
+.searchbar {
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-right: 10px;
+}
+
+.searchInput {
+  border: none;
+  width: 70%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.topbarLink {
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(246 255 113);
+  border-radius: 50%;
+  color: #6c6c6c;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topbarLinks {
+  display: flex;
+  align-items: center;
+}
+
+.menu, .closeMenu {
+  display: none;
+}
+
+.resultImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.resultName {
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.notifications {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: black;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.notification {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.nButton {
+  width: 80%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px)  {
+  .topbarLink{
+    display: none;
+  }
+
+  .searchbar {
+    width: 100%;
+    margin-right: 20px
+  }
+
+  .topbarRight {
+    margin-left: 18px;
+  }
+
+  .topbarLeft {
+    text-align: center;
+  }
+  .menu {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .showResult {
+    width: 120%;
+  }
+
+}

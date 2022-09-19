@@ -1,0 +1,205 @@
+.sidebar {
+  flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 50px;
+  background-color: #feffd2;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebarListItemText {
+  cursor: pointer;
+}
+
+.sidebarIcon {
+  margin-left: 15px;
+  color: rgb(247 63 63);
+}
+
+.sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.sidebarHr {
+  margin: 20px 0;
+}
+
+.sidebarFriendList {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.showFriendList {
+  display: block;
+}
+
+.exit {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: -6px;
+  cursor: pointer;
+}
+
+.categoryItems {
+  display: none;
+  margin-top: 16px;
+}
+
+.categoryItemList {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.showSub {
+  display: block;
+}
+
+
+.categoryButton {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-right: -7px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+li button {
+  cursor: pointer;
+}
+
+.sidebarCategory {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.showButton {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.CategoryIcon {
+  color: rgb(245, 118, 118);
+}
+
+.subCategoryIcon {
+  color: rgb(241, 82, 82);
+}
+
+.selectedButton {
+  border: 1px solid #ada6a6;
+  border-radius: 4px;
+  background-color: #fde1e6;
+  padding: 2px 8px;
+}
+
+.friendbarTitle{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: none;
+	z-index: 98;
+	background-color: #feffd2;
+	padding-top: 120px;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  display: block;
+	left: 0;
+  margin-left: 10px;
+  margin-top: -38px;
+}
+
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 42px;
+	cursor: pointer;
+  float: left;
+	
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}

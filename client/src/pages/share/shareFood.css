@@ -1,0 +1,350 @@
+.share {
+  background-color: #fdf0f2;
+  flex: 9;
+
+}
+
+.shareContainer {
+    display: flex;
+}
+
+.shareBox{
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.shareBox fieldset {
+  width: 116%;
+}
+
+.readyTime {
+  width: 14% !important;
+}
+
+fieldset {
+    border-radius: 20px;
+    color: white;
+}
+
+.ingredient {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shareInput{
+    height: 37px;
+    border: none;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    background: transparent;
+    width: 100%;
+}
+
+.shareInput::placeholder {
+    color: black;
+}
+
+textarea {
+    height: 80px !important;
+}
+
+.shareBox legend {
+  margin-right: 12px;
+  color: #ef2b46;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shareInput:focus{
+    outline: none;
+}
+
+.previewImg {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.imageBox {
+  position: relative;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.shareCancelImg {
+  position: absolute;
+  left: 20%;
+}
+
+.shareButton{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1775ee;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shareButton:focus{
+  outline: none;
+}
+
+.foodCat {
+    margin: 0 10px;
+    color: black !important;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nationContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  color: black;
+  border: 1px solid #c5baba;
+    border-radius: 8px;
+    margin: 10px 16px;
+    padding: 8px 16px;
+    background-color: #f3f2f2
+}
+
+.button:hover {
+  background-color: #c3c0c0;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: .64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  max-height: 600px;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  transform: rotate(32deg);
+  transition: .64s ease-in-out;
+}
+.popupphoto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+.popupphoto img {
+  width: auto;
+  height: 100%;
+}
+.popuptext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  padding: 4rem;
+}
+.popuptext h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+.popuptext p {
+  font-size: .875rem;
+  color: #686868;
+  line-height: 1.5;
+}
+ 
+.popuptext a {
+ text-decoration: none;
+ color:  #47BDFF;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+.closepopup {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: .875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #47BDFF;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.popup-inner {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.categoryBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.categoryItem {
+    display: flex;
+    margin: 8px 0;
+    position: relative;
+}
+
+.categoryItem label {
+    cursor: pointer;
+    display: flex;
+}
+
+.categoryLine {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 12vw;
+}
+
+.fileField {
+  margin-right: 16px;
+}
+
+.addIcon {
+    background-color: rgb(161, 211, 161);
+    border: none;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+
+.removeIcon {
+    background-color: rgb(209, 155, 155);
+    border: none;
+    border-radius: 20%;
+}
+
+.btnBox {
+  display: flex;
+  height: 10%;
+  margin-left: 14px;
+}
+
+.shareVegan, .shareImgBox{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.isVegan {
+  margin-right: 12px;
+}
+
+.categoryContainer {
+  display: flex;
+  align-items: center;
+}
+
+.chosenCategory {
+  display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categoryTextBox {
+  background-color: #dac1ed;
+  border: 1px solid #bdadad;
+  border-radius: 8px;
+  padding: 2px 10px
+}
+
+.previewImgContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 20px;
+}
+
+.timePeople {
+  display: flex;
+  align-items: center;
+  width: 117%;
+  gap: 8%;
+}
+
+.catButton {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.catButton:hover {
+  background-color: #fbe8ec;
+}
+
+.showCatButton {
+  background-color: #fde1e6;
+  border: 1px solid #ada6a6;
+  border-radius: 4px;
+}

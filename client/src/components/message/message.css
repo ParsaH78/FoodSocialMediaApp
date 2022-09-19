@@ -1,0 +1,71 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+
+.messageTop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settingBox {
+    display: block;
+}
+
+.noSettingBox {
+    display: none;
+}
+
+.deleteIcon {
+    color: red;
+    cursor: pointer;
+}
+
+.deleteIcon:hover {
+    color: rgb(196, 0, 0);
+}
+
+.editIcon {
+    color: blue;
+    cursor: pointer;
+}
+
+.editIcon:hover {
+    color: rgb(0, 0, 153);
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.messageText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1877f2;
+    color: white;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.messageBottom{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.message.own{
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.message.own .messageText{
+    background-color: rgb(245, 241, 241);
+    color: black;
+}

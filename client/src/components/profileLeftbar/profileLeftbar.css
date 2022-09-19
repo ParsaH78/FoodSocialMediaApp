@@ -1,0 +1,210 @@
+.leftbar {
+  flex: 3.5;
+  margin-left: 20px;
+  background-color: #feffd2;
+}
+
+.leftbarWrapper {
+  padding: 40px 20px 0 0;
+}
+
+.favoriteBox, .topBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.leftbarFavorite, .leftbarTop {
+  width: 100%;
+  height: 26vh;
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+.buttonsBox {
+  display: flex;
+  align-items: center;
+}
+
+
+.favoriteBtn, .topBtn {
+  border: none;
+  color: #7719f3;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f3dfdf;
+  border-radius: 20px;
+  padding: 8px 40px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 0px 70px #1c1c1c;
+}
+
+.favoriteBtn:hover, .topBtn:hover {
+  padding: 12px 40px;
+}
+
+.leftbarTitle{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.leftbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.leftbarInfo{
+  margin-bottom: 30px;
+}
+
+.leftbarInfoItem{
+  margin-bottom: 10px;
+}
+
+.leftbarInfoKey{
+  font-weight: 500;
+  margin-left: 15px;
+  color: #555;
+}
+
+.leftbarInfoValue{
+  font-weight: 300;
+}
+
+.leftbarFollowings{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftbarFollowing{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.leftbarFollowingImg{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.leftbarFollowButton{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #1872f2;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.leftbarExitButton{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #ff3333;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.leftbarEditButton{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #01b906;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.leftbarFollowingName {
+  text-align: center;
+}
+
+.leftbarFollowButton:focus{
+  outline: none;
+}
+
+.buttonWrapper {
+  display: flex;
+}
+
+.editInput {
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.editInput:focus {
+  outline: none;
+}
+
+.marriageLabel {
+  margin: 0px 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .leftbar {
+    display: none;
+  }
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: none;
+	z-index: 98;
+	background-color: #feffd2;
+	padding-top: 120px;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  display: block;
+	left: 0;
+  margin-left: 10px;
+  margin-top: -38px;
+}
+
+.mobile-nav.is-active .leftbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav.is-active .profileHamburger .bar, .profileHamburger:after, .profileHamburger:before {
+  background-color: black;
+}
+

@@ -1,0 +1,440 @@
+.post {
+  background-color: white;
+  flex: 9;
+  margin: 0;
+
+}
+
+.postContainer {
+    display: flex;
+}
+
+.postBox{
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.postDetails {
+    display: flex;
+    gap: 6%;
+}
+
+.rightSide {
+    flex: 4;
+}
+
+.leftSide {
+    flex: 8;
+}
+
+fieldset {
+    padding: 0;
+    border-radius: 10px;
+    color: black;
+    margin: 35px auto;
+}
+
+.postIngredientTitleBox {
+    background-color: #fbd7ac;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.peopleBox {
+    display: flex;
+}
+
+.peopleIcon {
+    color: #ef2b46;
+}
+
+.postIngredientTitle {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #ef2b46;
+}
+
+.ingerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 10px;
+}
+
+.ingerAmountBox {
+    display: flex;
+    gap: 6px;
+}
+
+.postReadyTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: #fbd7ac;
+    border: none;
+    border-radius: 10px;
+    margin-left: 60%;
+}
+
+.postReadyTimeText{
+    display: flex;
+    align-items: center;
+}
+
+.postReadyTimeTitle {
+    color: #ef2b46;
+}
+
+.postReadyTimeTitleBox {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.postReadyTimeIcon {
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+.postDesc {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.descSeparator {
+    width: 50%;
+    margin-right: 25%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #ef2b46;
+    height: 1px;
+    border: none;
+}
+
+.postCategory {
+    border-radius: 10px;
+}
+
+.postCategoryLegend, .postVeganLegend {
+    margin-right: 10px;
+}
+
+.postCategoryTextBox {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.postCategoryText {
+    background-color: #ffdada;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.postDescBox {
+    margin: 8px 0px;
+    text-align: justify;
+}
+
+.postDescList {
+    padding-left: 35px;
+    padding-right: 30px;
+}
+
+.postVegan {
+    width: 30%;
+    margin-left: 69%;
+}
+
+.postVeganText {
+    margin-bottom: 10px;
+}
+
+.postRatingBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.postExplainBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fbd7ac;
+    border: none;
+    border-radius: 10px;
+    margin-left: 60%;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.postExplainText {
+    margin: 12px 0;
+}
+
+.postCommentTitleBox {
+    color: #ef2b46;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-right: 20%;
+}
+
+.postCommentItemsBox {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #c3bcbc;
+    padding-bottom: 16px;
+    padding-top: 12px;
+}
+
+.postCommentForm {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.postCommentButton {
+    margin-top: 20px;
+}
+
+.postCommentSubmitButton {
+    background-color: #e4b8ff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+.postCommentUserText {
+    width: 50vw;
+    height: 46px !important;
+    margin-top: 4px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    background-color: transparent;
+}
+
+.postCommentUserText:focus {
+    outline: none;
+}
+
+.postCommentCreator {
+    display: flex;
+    align-items: center;
+}
+
+.postCommentLine {
+    background-color: gray;
+    height: 48px;
+    width: 2px;
+    margin: 0 12px;
+}
+
+.postCommentCreatorImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.postCommentCreatorName, .postCreatorName {
+    margin-right: 10px;
+}
+
+legend {
+    color: #ef2b46;
+}
+
+.foodCat {
+    margin: 0 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.postText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postTextItem {
+    font-size: 32px;
+    color: #ef2b46
+}
+
+.postCreator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.postCreatorProfile {
+    display: flex;
+    align-items: center;
+}
+
+.postCreatorEditDelete {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.postCreatorButton {
+    cursor: pointer;
+}
+  
+.postCreatorImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.postCreatorName {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.postTextEdit {
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+}
+
+.commentBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    border: none;
+    background-color: transparent;
+}
+
+.deleteIcon {
+    color: #f53333;
+    cursor: pointer;
+
+}
+
+.loadingBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.loadingText {
+    color: #d94f55;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.addToFavorite {
+    color: #5a5a5a;
+}
+
+.redColor {
+    color: red;
+}
+
+.colored {
+    color: black;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  height: 58vh;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 4%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 2%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  margin-right: 20px;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+    .postCommentCreatorImg {
+        width: 40px;
+        height: 40px;
+    }
+    .postCommentCreatorName {
+        display: none;
+    }
+    .postDetails {
+        display: inline-block;
+    }
+    .postReadyTime {
+        width: 100%;
+    }
+    .image {
+        height: auto;
+        width: 348px;
+        margin-left: 16px;
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffcd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "DynaPuff", "Roboto";
+  color: #ff5858;
+  margin-bottom: 10px;
+}
+
+.loginDesc {
+  font-size: 24px;
+}
+
+.registerBox{
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loginInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.loginInput:focus{
+    outline: none;
+}
+
+.loginButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginForgot{
+    text-align: center;
+    color: #1775ee;
+}
+
+.loginRegisterButton{
+    width: 100%;
+    align-self: center;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.registerBox{
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+
+.formTitle{
+  color: rgb(77, 1, 77);
+  text-align: center;
+}
+
+.registerButton{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.registerForm {
+  width: 80%;
+}
+
+.errorMessage {
+  color: #eb1f1f;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
